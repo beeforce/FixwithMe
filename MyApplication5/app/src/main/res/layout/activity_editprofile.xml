@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/myrl">
+
+
+    <EditText
+        android:id="@+id/edphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edLast"
+        android:layout_below="@+id/edLast"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edphone"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/edphone"
+        android:text="Phonenumber"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="12"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edFirst"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/edFirst"
+        android:text="Firstname"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edFirst"
+        android:layout_below="@+id/edFirst"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="12"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edLast"
+        android:layout_alignBottom="@+id/edLast"
+        android:layout_toStartOf="@+id/edLast"
+        android:text="Lastname"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edGarage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edphone"
+        android:layout_below="@+id/edphone"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="12"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edGarage"
+        android:layout_alignBottom="@+id/edGarage"
+        android:layout_toStartOf="@+id/edGarage"
+        android:text="Garagename"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edGarage"
+        android:layout_toEndOf="@+id/textView13"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLength="120"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edAddress"
+        android:layout_alignBottom="@+id/edAddress"
+        android:layout_toStartOf="@+id/edAddress"
+        android:text="Address"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/edbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/edAddress"
+        android:layout_marginBottom="49dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="OnEdit"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edAddress"
+        android:layout_below="@+id/edAddress"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="12"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edUsername"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/edUsername"
+        android:text="Username"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>
